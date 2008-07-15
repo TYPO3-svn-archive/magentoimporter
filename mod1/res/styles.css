@@ -1,0 +1,31 @@
+.magentoimport-img {
+	float:right;
+	padding:5px 10px;
+	width:185px;
+	text-align:center;
+	font-style:italic;
+}
+
+.magentoimport-form fieldset {
+	padding:10px;
+	margin:0 10px;
+	border:1px solid #ccc;
+}
+
+.magentoimport-form label input {
+	margin-right:5px;
+}
+
+.magentoimport-form .submit {
+	color:#FF0033;
+	border:1px solid #FF0033;
+}
+
+.magentoimport-success {
+	padding:10px;
+	margin:10px;
+	color:#009933;
+	border:1px solid #446423;
+	text-align:center;
+	background:#EFF5EA;
+}

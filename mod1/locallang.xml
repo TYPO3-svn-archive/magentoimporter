@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;tools_txmagentoimportM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Magento Importer</label>
+			<label index="function1">About this extension</label>			
+			<label index="function2">Export Customers</label>
+			<label index="function3">Export Products</label>
+			<label index="function4">Help</label>			
+			<label index="submit">Start the export</label>
+			
+			<label index="text_about1">
+				This module exports data from tt_products to another table which can be imported into Magento as CSV file (after exporting the 2nd table with e.g. phpmyadmin).&lt;/br &gt; &lt;/br &gt;  Additionally the customers of the table &lt;i&gt;tt_products_customer&lt;/i&gt; can be exported using the same way to import them as customers of Magento.&lt;/br &gt; &lt;/br &gt; 
+				
+				&lt;strong&gt;The export won't work out of the box!&lt;/strong&gt; You will need to adopt the code which you find at &lt;i&gt;typo3conf/ext/magentoimport/mod1/index.php &lt;/i&gt;
+				&lt;/br &gt;  &lt;/br &gt;&lt;/br &gt;&lt;/br &gt;
+			</label>
+
+			<label index="text_about2">
+				This extension has been done by the company &lt;a href="http://www.cyberhouse.at/" target="_blank"&gt;CYBERhouse.&lt;/a&gt;
+				&lt;/br &gt;&lt;/br &gt;
+				Send any suggestions &amp; improvements to the email address you can find at &lt;a href="http://www.cyberhouse.at/" target="_blank"&gt;http://www.cyberhouse.at/&lt;/a&gt; or &lt;a href="http://www.ringer.it/" target="_blank"&gt;http://www.ringer.it/&lt;/a&gt;!
+			</label>
+
+			<label index="truncate">Truncate export table before import</label>
+			<label index="text_products">
+				Export products into the table &lt;i &gt;magento_products&lt;/i &gt;. &lt;/br &gt;&lt;/br &gt;
+				Be aware how the table looks and that you first need to define the category mapping!
+			</label>
+			<label index="product_msg_truncate_yes">The table has been truncated!</label>
+			<label index="product_msg_count">%s records are avalable and %s have been exported!</label>
+
+			<label index="text_customer">
+				Export customers into the table &lt;i &gt;magento_users&lt;/i &gt;. &lt;/br &gt;&lt;/br &gt;
+				Be aware how the table looks!
+			</label>
+			<label index="customer_msg_truncate_yes">The table has been truncated!</label>
+			<label index="customer_msg_count">%s records have been exported!</label>
+
+			<label index="text_help">
+				This extension has been used to import more than 4000 products to Magento from a very old and hacked tt_products version.  &lt;/br &gt;
+				Out of this reason the functionality is very limited and modifications are necessary to fit the extension to your tt_products version and your needs (e.g. different product attributes in Magento)! Adapations are still very easy because you just need to follow those steps (better described in the manual):
+				&lt;ol &gt;
+					&lt;li &gt;Adapt with phpmyadmin the export table (magento_products, magento_users).&lt;/li &gt;
+					&lt;li &gt;Adapt the file ext/magentoimport/mod1/index.php by changing the functions createProducts() and createCustomer(): Add the new/changed fields to the insert-statement.&lt;/li &gt;
+					&lt;li &gt; Run the extension and fill the export tables &lt;/li &gt;
+					&lt;li &gt; Export the export_tables by using phpmyadmin again. Export the data as CSV.  &lt;/li &gt;
+					&lt;li &gt; Import the csv file in Magento by using the Magento Importer.  &lt;/li &gt;
+					
+				&lt;/ol &gt;
+				
+				Hopefully you are done! Have fun with Magento, I love it!
+
+			</label>
+		</languageKey>
+	</data>
+</T3locallang>

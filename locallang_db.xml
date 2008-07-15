@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'magentoimport'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_magentoimport_cat">Category Transformation</label>
+			<label index="tx_magentoimport_cat.fromold">From tt_prodcuts</label>
+			<label index="tx_magentoimport_cat.tonew">To Magento</label>
+		</languageKey>
+	</data>
+</T3locallang>
